@@ -13,69 +13,81 @@
         <p id="time">Seconds Remaining: </p>
         
     </header>
-    <article id="startsec">
-        <h2>Coding Quiz</h2>
+    <section id="startsec">
+        <h2>Random Questions Quiz</h2>
         <p>
             Answer all of the questions before the time runs out! Each wrong answer deducts 10 seconds
             from the clock. Are you ready? Press the button whenever you're ready!
         </p>
         <button>Start Now!</button>
-    </article>
+    </section>
     <article id = "q1">
         <h2>Question One</h2>
         <p>Which of these is not a primitive data type used in Javascript?</p>
         <button>boolean</button>
         <button>string</button>
         <button>number</button>
-        <button>array</button>
+        <button id = "correct">array</button>
     </article>
     <article id = "q2">
         <h2>Question Two</h2>
         <p>What's the biggest animal in the world?</p>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
+        <button id = "correct">Blue Whale</button>
+        <button>African Elephant</button>
+        <button>Giraffe</button>
+        <button>Sea Otter</button>
     </article>
     <article id = "q3">
         <h2>Question Three</h2>
-        <p></p>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
+        <p>Which country is brie cheese originally from?</p>
+        <button>Switzerland</button>
+        <button>Denmark</button>
+        <button id = "correct">France</button>
+        <button>Germany</button>
     </article>
     <article id = "q4">
         <h2>Question Four</h2>
-        <p></p>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
+        <p>What is a baby rabbit called?</p>
+        <button>Foal</button>
+        <button>Pup</button>
+        <button id = "correct">Kit</button>
+        <button>Calf</button>
     </article>
     <article id = "q5">
         <h2>Question Five</h2>
-        <p></p>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
+        <p>What does the AC button on a calculator stand for?</p>
+        <button>Air Conditioned</button>
+        <button id = "correct">All Clear</button>
+        <button>Any Color</button>
+        <button>All Code</button>
     </article>
     <article id = "q6">
         <h2>Question Six</h2>
-        <p></p>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
+        <p>How many elements are there in the periodic table?</p>
+        <button>90</button>
+        <button id = "correct">118</button>
+        <button>145</button>
+        <button>100</button>
     </article>
     <article id = "q7">
         <h2>Question Seven</h2>
-        <p></p>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
+        <p>Typically, what's the strongest muscle in the human body?</p>
+        <button>Masseter - main jaw muscle</button>
+        <button>Heart</button>
+        <button>Soleus - a primary calf muscle</button>
+        <button>Gluteus Maximus</button>
+    </article>
+    <article id = "endscreen">
+        <h2>Game Over!</h2>
+        <h3 id = "winlossdisplay"></h3>
+        <form>
+            <label for = "initials">Enter Initials:</label>
+            <input type = "text" id = "initials" name = "initials">
+        </form>
+    </article>
+    <article id = "scoresec">
+        <h2>Highscores</h2>
+        <ul id = "highscores"></ul>
     </article>
     <script src="./assets/script.js"></script>
 </body>
