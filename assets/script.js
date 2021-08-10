@@ -89,9 +89,7 @@ wrong3El.forEach(function(el, index){
         wrong(index);
     })
 });
-// wrong1El.addEventListener("click", wrong);
-// wrong2El.addEventListener("click", wrong);
-// wrong3El.addEventListener("click", wrong);
+
 
 //correct answer function
 function correct(index){
