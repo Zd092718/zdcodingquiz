@@ -1,3 +1,4 @@
+//variables established here
 var timeEl = document.querySelector("#time");
 var startButtonEl = document.querySelector("#start");
 var questionsEl = document.querySelectorAll(".questions")
@@ -12,13 +13,14 @@ var endEl = document.querySelector("#endscreen");
 var winlossEl = document.querySelector("#winlossdisplay");
 var scoresEl = document.querySelector("#scoresec");
 var resetEl = document.querySelector('#reset')
-var highscorseEl = document.querySelector("#highscores");
+var highscoresEl = document.querySelector("#highscores");
 var startSecEl = document.querySelector("#startsec");
 var correctEl = document.querySelectorAll("#correct");
 var wrong1El = document.querySelectorAll(".wrong1");
 var wrong2El = document.querySelectorAll(".wrong2");
 var wrong3El = document.querySelectorAll(".wrong3");
 var nextEl = document.querySelectorAll("#next");
+var inputEl = document.querySelector('#initials');
 var timeLeft = 60;
 
 startButtonEl.addEventListener("click", start)
@@ -31,9 +33,7 @@ quest4El.hidden = true;
 quest5El.hidden = true;
 quest6El.hidden = true;
 quest7El.hidden = true;
-scoresEl.hidden = true;
 endEl.hidden = true;
-highscorseEl.hidden = true;
 }
 hideAll();
 
@@ -148,6 +148,20 @@ nextEl.forEach(function(el, index){
 
 //reset function
 function resetGame(){
+    var highscores = JSON.parse(localStorage.getItem('highscores') || '[]');
+    highscores.push({
+        initials: inputEl.value,
+        timeRem: timeLeft
+    });
+    localStorage.setItem('highscores', JSON.stringify(highscores));
     window.location.reload();
 }
-resetEl.addEventListener("click", resetGame)
+resetEl.addEventListener("click", resetGame);
+
+//highscores displayed here
+var highscores = JSON.parse(localStorage.getItem('highscores') || '[]');
+highscores.forEach(function(obj){
+    var scoreli = document.createElement('li')
+    scoreli.textContent = obj.initials + " : " + obj.timeRem
+    highscoresEl.appendChild(scoreli);
+});
