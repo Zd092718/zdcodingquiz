@@ -12,76 +12,76 @@
         <a>View Highscores</a>
         <p id="time">Seconds Remaining: 60</p>
     </header>
-    <section id="startsec">
+    <article id="startsec">
         <h2>Random Questions Quiz</h2>
         <p>
             Answer all of the questions before the time runs out! Each wrong answer deducts 10 seconds
             from the clock. Are you ready? Press the button whenever you're ready!
         </p>
         <button id = "start">Start Now!</button>
-    </section>
+    </article>
     <article class = "questions" id = "q1">
         <h2>Question One</h2>
         <p>Which of these is not a primitive data type used in Javascript?</p>
-        <button class = "wrong">boolean</button>
-        <button class = "wrong">string</button>
-        <button class = "wrong">number</button>
+        <button class = "wrong1">boolean</button>
+        <button class = "wrong2">string</button>
+        <button class = "wrong3">number</button>
         <button id = "correct">array</button>
-        <button id = "next">Next</button>
+        <button id = "next" disabled>Next</button>
     </article>
     <article class = "questions" id = "q2">
         <h2>Question Two</h2>
         <p>What's the biggest animal in the world?</p>
-        <button id = "correct2">Blue Whale</button>
-        <button class = "wrong">African Elephant</button>
-        <button class = "wrong">Giraffe</button>
-        <button class = "wrong">Sea Otter</button>
-        <button id = "next">Next</button>
+        <button id = "correct">Blue Whale</button>
+        <button class = "wrong1">African Elephant</button>
+        <button class = "wrong2">Giraffe</button>
+        <button class = "wrong3">Sea Otter</button>
+        <button id = "next" disabled>Next</button>
     </article>
     <article class = "questions" id = "q3">
         <h2>Question Three</h2>
         <p>Which country is brie cheese originally from?</p>
-        <button class = "wrong">Switzerland</button>
-        <button class = "wrong">Denmark</button>
-        <button id = "correct3">France</button>
-        <button class = "wrong">Germany</button>
-        <button id = "next">Next</button>
+        <button class = "wrong1">Switzerland</button>
+        <button class = "wrong2">Denmark</button>
+        <button id = "correct">France</button>
+        <button class = "wrong3">Germany</button>
+        <button id = "next" disabled>Next</button>
     </article>
     <article class = "questions" id = "q4">
         <h2>Question Four</h2>
         <p>What is a baby rabbit called?</p>
-        <button class = "wrong">Foal</button>
-        <button class = "wrong">Pup</button>
-        <button id = "correct4">Kit</button>
-        <button class = "wrong">Calf</button>
-        <button id = "next">Next</button>
+        <button class = "wrong1">Foal</button>
+        <button class = "wrong2">Pup</button>
+        <button id = "correct">Kit</button>
+        <button class = "wrong3">Calf</button>
+        <button id = "next" disabled>Next</button>
     </article>
     <article class = "questions" id = "q5">
         <h2>Question Five</h2>
         <p>What does the AC button on a calculator stand for?</p>
-        <button class = "wrong">Air Conditioned</button>
-        <button id = "correct5">All Clear</button>
-        <button class = "wrong">Any Color</button>
-        <button class = "wrong">All Code</button>
-        <button id = "next">Next</button>
+        <button class = "wrong1">Air Conditioned</button>
+        <button id = "correct">All Clear</button>
+        <button class = "wrong2">Any Color</button>
+        <button class = "wrong3">All Code</button>
+        <button id = "next" disabled>Next</button>
     </article>
     <article class = "questions" id = "q6">
         <h2>Question Six</h2>
         <p>How many elements are there in the periodic table?</p>
-        <button class = "wrong">90</button>
-        <button id = "correct6">118</button>
-        <button class = "wrong">145</button>
-        <button class = "wrong">100</button>
-        <button id = "next">Next</button>
+        <button class = "wrong1">90</button>
+        <button id = "correct">118</button>
+        <button class = "wrong2">145</button>
+        <button class = "wrong3">100</button>
+        <button id = "next" disabled>Next</button>
     </article>
     <article class = "questions" id = "q7">
         <h2>Question Seven</h2>
         <p>Typically, what's the strongest muscle in the human body?</p>
-        <button id = "correct7">Masseter - main jaw muscle</button>
-        <button class = "wrong">Heart</button>
-        <button class = "wrong">Soleus - a primary calf muscle</button>
-        <button class = "wrong">Gluteus Maximus</button>
-        <button id = "next">Next</button>
+        <button id = "correct">Masseter - main jaw muscle</button>
+        <button class = "wrong1">Heart</button>
+        <button class = "wrong2">Soleus - a primary calf muscle</button>
+        <button class = "wrong3">Gluteus Maximus</button>
+        <button id = "next" disabled>Next</button>
     </article>
     <article id = "endscreen">
         <h2>Game Over!</h2>
@@ -90,6 +90,7 @@
             <label for = "initials">Enter Initials:</label>
             <input type = "text" id = "initials" name = "initials">
         </form>
+        <button id = "reset">Reset Game</button>
     </article>
     <article id = "scoresec">
         <h2>Highscores</h2>
