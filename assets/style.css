@@ -1,4 +1,7 @@
-
+* {
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
 article {
     text-align: center;
@@ -7,4 +10,10 @@ article {
 
 ul {
     list-style-type: none;
+}
+
+button{
+    background-color: rgb(5, 209, 138);
+    border-radius: 25px;
+    margin: 5px;
 }
